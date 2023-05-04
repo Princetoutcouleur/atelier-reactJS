@@ -15,20 +15,22 @@ const Inscription = () => {
         </div>
         <div className="col-lg-12 w-50 mx-auto">
           <form>
-            <FloatingLabel
-              controlId="floatingName"
-              label="Name"
-              className="mb-3"
-            >
-              <Form.Control type="text" placeholder="Baba Thiam" />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingNumber"
-              label="Number"
-              className="mb-3"
-            >
-              <Form.Control type="tel" placeholder="77 101 05 02" />
-            </FloatingLabel>
+            <div className="d-flex justify-content-between">
+              <FloatingLabel
+                controlId="floatingName"
+                label="Name"
+                className="mb-3"
+              >
+                <Form.Control type="text" placeholder="Baba Thiam" />
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="floatingNumber"
+                label="Number"
+                className="mb-3"
+              >
+                <Form.Control type="tel" placeholder="77 101 05 02" />
+              </FloatingLabel>
+            </div>
             <FloatingLabel
               controlId="floatingInput"
               label="Email address"
@@ -36,23 +38,30 @@ const Inscription = () => {
             >
               <Form.Control type="email" placeholder="name@example.com" />
             </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingPassword"
-              label="Password"
-              className="mb-3"
-            >
-              <Form.Control type="password" placeholder="Password" />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingConfirm"
-              label="Confirmation"
-              className="mb-3"
-            >
-              <Form.Control type="password" placeholder="Confirm password" />
-            </FloatingLabel>
-            <div className="d-flex justify-content-between mb-5">
-              <Link to="/connexion">Vous avez déjà un comte, Connexion</Link>
-              <Link className="btn btn-success">Register</Link>
+            <div className="d-flex justify-content-between">
+              <FloatingLabel
+                controlId="floatingPassword"
+                label="Password"
+                className="mb-3"
+              >
+                <Form.Control type="password" placeholder="Password" />
+              </FloatingLabel>
+              <FloatingLabel
+                controlId="floatingConfirm"
+                label="Confirmation"
+                className="mb-3"
+              >
+                <Form.Control type="password" placeholder="Confirm password" />
+              </FloatingLabel>
+            </div>
+            <div className="d-flex justify-content-center mb-3">
+              <Link className="btn btn-success w-50">Register</Link>
+            </div>
+            <div>
+              <p>
+                Vous avez déjà un compte?
+                <Link to="/connexion">Se connecter</Link>
+              </p>
             </div>
           </form>
         </div>

@@ -29,13 +29,16 @@ const Connexion = () => {
             >
               <Form.Control type="password" placeholder="Password" />
             </FloatingLabel>
-            <div className="d-flex justify-content-between mb-5">
-              <Link to="/forgotpw">Mot de passe oublié</Link>
-              <Link to="/connexion" className="btn btn-success">
+            <div className="mb-3">
+              <Link to="/forgotpw" className="text-secondary">
+                Mot de passe oublié
+              </Link>
+            </div>
+            <div className="mb-3">
+              <Link to="/" className="btn btn-success w-100 fw-bold">
                 Connexion
               </Link>
             </div>
-            <hr />
             <p>
               Vous avez pas encore de compte?
               <Link to="/register">S'inscrire</Link>

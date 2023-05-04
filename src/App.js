@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
 import Connexion from './Components/Connexion/Connexion'
 import Inscription from './Components/Inscription/Inscription'
+import ForgotPw from './Components/ForgotPw/ForgotPw'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route} from 'react-router-dom';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/connexion' element={<Connexion/>}/>
         <Route path='/register' element={<Inscription/>}/>
+        <Route path='/forgotPw' element={<ForgotPw/>}/>
       </Routes>
     </div>
   );
