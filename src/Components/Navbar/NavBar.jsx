@@ -12,10 +12,10 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link to="/" className='text-decoration-none text-dark pe-2'>Home</Link>
+            <Link to="/home" className='text-decoration-none text-dark pe-2'>Home</Link>
             <Link to="/about" className='text-decoration-none text-dark pe-2'>About</Link>
             <Link to="/contact" className='text-decoration-none text-dark pe-2'>Contact</Link>
-            <Link to="/connexion" className='btn btn-success'>Connexion</Link>
+            <Link to="/" className='btn btn-success'>Connexion</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -15,10 +15,10 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
-        <Route path='/connexion' element={<Connexion/>}/>
+        <Route path='/' element={<Connexion/>}/>
         <Route path='/register' element={<Inscription/>}/>
         <Route path='/forgotPw' element={<ForgotPw/>}/>
       </Routes>

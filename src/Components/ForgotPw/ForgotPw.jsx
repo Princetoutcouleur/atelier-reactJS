@@ -30,7 +30,7 @@ const ForgotPw = () => {
           <div>
             <p>
               Vous vous souvenez de votre mot de passe?
-              <Link to="/connexion">Se connecter</Link>
+              <Link to="/">Se connecter</Link>
             </p>
           </div>
         </div>

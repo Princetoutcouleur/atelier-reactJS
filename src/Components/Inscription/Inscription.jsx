@@ -60,7 +60,7 @@ const Inscription = () => {
             <div>
               <p>
                 Vous avez déjà un compte?
-                <Link to="/connexion">Se connecter</Link>
+                <Link to="/">Se connecter</Link>
               </p>
             </div>
           </form>

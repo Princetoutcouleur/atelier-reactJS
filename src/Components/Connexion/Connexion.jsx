@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/images/bakeli.png";
 
 const Connexion = () => {
+  function handleClick() {
+    alert("Bienvenue cher utilusateur!");
+  }
   return (
     <div className="container">
       <div className="row">
@@ -35,7 +38,11 @@ const Connexion = () => {
               </Link>
             </div>
             <div className="mb-3">
-              <Link to="/" className="btn btn-success w-100 fw-bold">
+              <Link
+                to="/home"
+                onClick={handleClick}
+                className="btn btn-success w-100 fw-bold"
+              >
                 Connexion
               </Link>
             </div>
