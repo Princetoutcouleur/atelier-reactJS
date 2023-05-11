@@ -1,9 +1,8 @@
-import React from 'react'
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Form from "react-bootstrap/Form";
+import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/images/bakeli.png";
 import "./ForgotPw.css";
+import Input from "../Input/Input";
 
 const ForgotPw = () => {
   return (
@@ -21,13 +20,7 @@ const ForgotPw = () => {
                 Saisir votre addresse email pour reinitialiser votre mot de
                 passe.
               </h6>
-              <FloatingLabel
-                controlId="floatingInput"
-                label="Email address"
-                className="mb-3"
-              >
-                <Form.Control type="email" placeholder="name@example.com" />
-              </FloatingLabel>
+              <Input type="password" placeholder="******" label="Password" />
               <Link to="" className="btn btn-success w-100 fw-bold mb-5">
                 Réinitialiser
               </Link>
@@ -43,6 +36,6 @@ const ForgotPw = () => {
       </div>
     </div>
   );
-}
+};
 
-export default ForgotPw
+export default ForgotPw;

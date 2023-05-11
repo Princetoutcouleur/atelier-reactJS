@@ -1,9 +1,8 @@
 import React from "react";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/images/bakeli.png";
-import "./Connexion.css"
+import "./Connexion.css";
+import Input from "../Input/Input";
 
 const Connexion = () => {
   function handleClick() {
@@ -19,20 +18,12 @@ const Connexion = () => {
         </div>
         <div className="col-lg-12 d-flex justify-content-center align-items-center">
           <form>
-            <FloatingLabel
-              controlId="floatingInput"
-              label="Email address"
-              className="input mb-3"
-            >
-              <Form.Control type="email" placeholder="name@example.com" />
-            </FloatingLabel>
-            <FloatingLabel
-              controlId="floatingPassword"
-              label="Password"
-              className="input mb-3"
-            >
-              <Form.Control type="password" placeholder="Password" />
-            </FloatingLabel>
+            <Input
+              type="email"
+              placeholder="babathiam@gmail.com"
+              label="Email adresse"
+            />
+            <Input type="password" placeholder="******" label="Password" />
             <div className="mb-3">
               <Link to="/forgotpw" className="text-secondary">
                 Mot de passe oublié
