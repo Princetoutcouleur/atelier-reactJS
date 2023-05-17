@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/images/bakeli.png";
 import "./ForgotPw.css";
 import Input from "../Input/Input";
+import Boutons from "../Boutons/Boutons";
 
 const ForgotPw = () => {
   return (
@@ -21,9 +22,16 @@ const ForgotPw = () => {
                 passe.
               </h6>
               <Input type="password" placeholder="******" label="Password" />
-              <Link to="" className="btn btn-success w-100 fw-bold mb-5">
-                Réinitialiser
-              </Link>
+              <div className="d-flex justify-content-center">
+                <Boutons>
+                  <Link
+                    to=""
+                    className="text-decoration-none text-white w-100 fw-bold mb-5"
+                  >
+                    Réinitialiser
+                  </Link>
+                </Boutons>
+              </div>
               <div>
                 <p>
                   Vous vous souvenez de votre mot de passe? <br />

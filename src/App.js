@@ -9,18 +9,24 @@ import Inscription from './Components/Inscription/Inscription'
 import ForgotPw from './Components/ForgotPw/ForgotPw'
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route} from 'react-router-dom';
+import Sidebar from './Components/Sidebar/Sidebar';
+import Fead from './Components/Fead/Fead';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-dark vh-100">
       <NavBar />
+      <div className='d-flex'>
+        <Sidebar />
+        <Fead />
+      </div>
       <Routes>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/' element={<Connexion/>}/>
-        <Route path='/register' element={<Inscription/>}/>
-        <Route path='/forgotPw' element={<ForgotPw/>}/>
+        <Route path="/connexion" element={<Connexion />} />
+        <Route path="/register" element={<Inscription />} />
+        <Route path="/forgotPw" element={<ForgotPw />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

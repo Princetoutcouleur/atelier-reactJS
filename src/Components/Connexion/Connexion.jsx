@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../../Assets/images/bakeli.png";
 import "./Connexion.css";
 import Input from "../Input/Input";
+import Boutons from "../Boutons/Boutons";
 
 const Connexion = () => {
   function handleClick() {
@@ -29,14 +30,12 @@ const Connexion = () => {
                 Mot de passe oublié
               </Link>
             </div>
-            <div className="mb-3">
-              <Link
-                to="/home"
-                onClick={handleClick}
-                className="btn btn-success w-100 fw-bold"
-              >
-                Connexion
-              </Link>
+            <div className="mb-3 d-flex justify-content-center">
+              <Boutons>
+                <Link to="/home" className="text-decoration-none text-white" onClick={handleClick}>
+                  Se connecter
+                </Link>
+              </Boutons>
             </div>
             <p>
               Vous avez pas encore de compte?
