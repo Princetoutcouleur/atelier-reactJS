@@ -72,19 +72,19 @@ function Sidebar() {
           <div className="lien-rapides">
             <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="/#">
                   Legal
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/#">
                   Privacy Center
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/#">
                   Privacy Policy
                 </a>
               </li>
@@ -92,19 +92,19 @@ function Sidebar() {
 
             <ul class="nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="/#">
                   Cookies
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/#">
                   About
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/#">
                   Ads
                 </a>
               </li>
