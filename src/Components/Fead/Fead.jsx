@@ -58,16 +58,16 @@ const Fead = () => {
     },
   ];
   return (
-    <div className="container py-3">
-      <h2 className="text-white my-4">Focus</h2>
+    <div className="container py-3 mt-5">
+      <h1 className="text-white text-start my-4">Focus</h1>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5">
         {cards.map((card, index) => (
-          <div className="col mb-4" key={index}>
+          <div className="col mb-3" key={index}>
             <div className="card bg-dark">
               <img src={card.img} className="card-img-top" alt="Img" />
               <div className="card-body">
                 <h5 className="card-title text-white">{card.titre}</h5>
-                <p className="card-text text-white mt-5">{card.paragraphe}</p>
+                <p className="card-text text-white mt-2">{card.paragraphe}</p>
               </div>
             </div>
           </div>
