@@ -22,7 +22,7 @@ function Sidebar() {
     <>
       <Button
         variant=""
-        className="d-lg-none bg-black text-light fw-bold mb-auto"
+        className="d-lg-none bg-black text-light fw-bold mb-auto rounded-0"
         onClick={handleShow}
       >
         <img src={logovert} alt="" className="logovert" />
