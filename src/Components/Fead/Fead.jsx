@@ -58,8 +58,11 @@ const Fead = () => {
     },
   ];
   return (
-    <div className="container py-3 mt-5">
-      <h1 className="text-white text-start my-4">Focus</h1>
+    <div className="container py-3">
+      <div className="d-flex justify-content-between">
+        <h1 className="text-white text-start my-4">Focus</h1>
+        <button className="btn btn-link text-light">Show All</button>
+      </div>
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5">
         {cards.map((card, index) => (
           <div className="col mb-3" key={index}>

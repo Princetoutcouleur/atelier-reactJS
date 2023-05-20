@@ -1,32 +1,15 @@
-
 .sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: black;
+  width: 300px;
+}
+
+.logovert {
+  width: 50px;
+  height: 55px;
+}
+
+.offcanvas-header .btn-close {
+  background-color: white;
+}
+.lien-rapides a {
   color: white;
-  position: sticky;
-  top: 0;
-  transition: transform 0.3s ease;
-  z-index: 10;
-}
-
-.sidebar.open {
-  transform: translateX(0);
-}
-
-.toggle-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.sidebar-menu {
-  list-style: none;
-  padding: 0;
-  margin: 20px;
-}
-
-.sidebar-menu li {
-  margin-bottom: 10px;
 }

@@ -1,6 +1,6 @@
-import './index.css';
-import React from 'react';
-import NavBar from './Components/Navbar/NavBar'
+import "./index.css";
+import React from "react";
+import NavBar from "./Components/Navbar/NavBar";
 // import Home from './Components/Home/Home'
 // import About from './Components/About/About'
 // import Contact from './Components/Contact/Contact'
@@ -9,8 +9,8 @@ import NavBar from './Components/Navbar/NavBar'
 // import ForgotPw from './Components/ForgotPw/ForgotPw'
 import "bootstrap/dist/css/bootstrap.min.css";
 // import { Routes, Route} from 'react-router-dom';
-import Sidebar from './Components/Sidebar/Sidebar';
-import Fead from './Components/Fead/Fead';
+import Sidebar from "./Components/Sidebar/Sidebar";
+import Fead from "./Components/Fead/Fead";
 
 function App() {
   return (

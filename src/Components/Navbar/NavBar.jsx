@@ -1,14 +1,11 @@
-import React from 'react'
-import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
-import "./NavBar.css"
-
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <Navbar
-      className="navbar text-light pt-3 d-flex justify-content-end"
-    >
+    <Navbar className="navbar text-light py-3 d-flex justify-content-end">
       <div className="d-flex me-3">
         <Link
           to="/register"
@@ -22,6 +19,6 @@ const NavBar = () => {
       </div>
     </Navbar>
   );
-}
+};
 
-export default NavBar
+export default NavBar;
